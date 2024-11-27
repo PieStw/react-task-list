@@ -22,7 +22,7 @@ function App() {
           <div key={index}>
             <p>
               <b>{task.title}</b>
-              <button>{task.state}</button>
+              <button className={task.state}>{task.state}</button>
             </p>
             <p>Priority: {task.priority}</p>
             <p>Est. time: {task.estimatedTime}</p>
@@ -36,7 +36,7 @@ function App() {
           <div key={index}>
             <p>
               <b>{task.title}</b>
-              <button>{task.state}</button>
+              <button className={task.state}>{task.state}</button>
             </p>
             <p>Priority: {task.priority}</p>
             <p>Est. time: {task.estimatedTime}</p>

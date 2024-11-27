@@ -33,7 +33,16 @@ button {
   height: 25px;
   margin: 0 5px;
   padding: 0 5px;
-  background-color: #d3691d;
   border: 1px solid white;
   color: white;
+}
+
+.completed {
+  background-color: #4caf50;
+}
+.backlog {
+  background-color: #ffc107;
+}
+.in_progress {
+  background-color: #2196f3;
 }
