@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  background-color: aquamarine;
+  height: 100px;
+  text-align: start;
+  line-height: 100px;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+p {
+  margin-top: 5px;
+}
+
+button {
+  height: 25px;
+  margin: 0 5px;
+  padding: 0 5px;
+  background-color: #d3691d;
+  border: 1px solid white;
+  color: white;
+}

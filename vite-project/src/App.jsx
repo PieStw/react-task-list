@@ -12,21 +12,37 @@ function App() {
 
   return (
     <>
-      <h1>Current Tasks ({uncompletedTask.length})</h1>
-      {uncompletedTask.map((task, index) => (
-        <div key={index}>
-          <p>{task.title}</p>
-        </div>
-      ))}
+      <header className="container">
+        <h1>Task Manager</h1>
+      </header>
 
+      <div className="container card">
+        <h2>Current Tasks ({uncompletedTask.length})</h2>
+        {uncompletedTask.map((task, index) => (
+          <div key={index}>
+            <p>
+              <b>{task.title}</b>
+              <button>{task.state}</button>
+            </p>
+            <p>Priority: {task.priority}</p>
+            <p>Est. time: {task.estimatedTime}</p>
+          </div>
+        ))}
+      </div>
       <hr></hr>
-
-      <h1>Completed Tasks ({completedTask.length})</h1>
-      {completedTask.map((task, index) => (
-        <div key={index}>
-          <p>{task.title}</p>
-        </div>
-      ))}
+      <div className="container card">
+        <h2>Completed Tasks ({completedTask.length})</h2>
+        {completedTask.map((task, index) => (
+          <div key={index}>
+            <p>
+              <b>{task.title}</b>
+              <button>{task.state}</button>
+            </p>
+            <p>Priority: {task.priority}</p>
+            <p>Est. time: {task.estimatedTime}</p>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
